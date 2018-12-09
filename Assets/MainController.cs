@@ -13,7 +13,7 @@ public class MainController : MonoBehaviour {
 
         this.myRigidbody = GetComponent<Rigidbody2D>();
 
-        this.myRigidbody.AddForce(this.transform.forward * this.downForce);
+        //this.myRigidbody.AddForce(this.transform.forward * this.downForce);
 
     }
 	

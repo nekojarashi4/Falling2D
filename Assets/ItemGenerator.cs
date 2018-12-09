@@ -20,10 +20,10 @@ public class ItemGenerator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (this.groundGeneratePoint >= SoccerBall.transform.position.y)
+        if (this.groundGeneratePoint >= SoccerBall.transform.position.y-10)
         {
             GameObject ground = Instantiate(groundPrefab) as GameObject;
-            ground.transform.position = new Vector3(0, groundGeneratePoint - 10, -10);
+            ground.transform.position = new Vector3(0, groundGeneratePoint - 13, 0);
             this.groundGeneratePoint -= 10;
         }
         
