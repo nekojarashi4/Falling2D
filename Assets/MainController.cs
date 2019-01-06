@@ -6,7 +6,7 @@ public class MainController : MonoBehaviour {
 
     private Rigidbody2D myRigidbody;
 
-    private float downForce = 1f;
+    private float downForce = 10f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,7 @@ public class MainController : MonoBehaviour {
 
         //this.myRigidbody.AddForce(this.transform.forward * this.downForce);
 
+        this.myRigidbody.velocity = Vector2.down * 1f;
     }
 	
 	// Update is called once per frame

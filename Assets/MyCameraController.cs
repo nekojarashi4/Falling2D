@@ -8,6 +8,8 @@ public class MyCameraController : MonoBehaviour {
 
     private float CameraIchi;
 
+    public float speed;
+
 	// Use this for initialization
 	void Start () {
 
@@ -20,9 +22,9 @@ public class MyCameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        this.CameraIchi = SoccerBall.transform.position.y - 4;
+        //this.CameraIchi = SoccerBall.transform.position.y - 4;
 
-        this.transform.position = new Vector3(0, this.CameraIchi, -10);
+        this.transform.position = this.transform.position + new Vector3(0, speed, 0);
 
 	}
 }
